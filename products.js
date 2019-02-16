@@ -58,7 +58,7 @@ app.get( '/products', function( req, res ) {
     ` );
 });
 
-const port = 3000;
+const port = process.env.PORT || 8080;
 app.listen( port, function( error ) {
     if( error ) {
         console.log( 'not able to start server on port ' + port );
